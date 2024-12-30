@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+    </header>
+    <main>
+      <form id="weather-form" class="weather-form container">
+        <fieldset id="city-name-input" class="city-name-fieldset">
+          <legend>Type below a city name to check its current weather</legend>
+          <input
+            type="text"
+            placeholder="City Name"
+            id="city-name"
+            class="city-name-input"
+            required
+          />
+        </fieldset>
+        <fieldset id="temp-unit-input" class="temp-unit-input">
+          <legend>Choose a temperature unit</legend>
+          <input
+            type="radio"
+            id="fahrenheit"
+            class="temp-unit"
+            name="temp-unit"
+            value="fahrenheit"
+            checked
+          />
+          <label for="fahrenheit">Fahrenheit</label>
+          <input
+            type="radio"
+            id="celsius"
+            class="temp-unit"
+            name="temp-unit"
+            value="celsius"
+          />
+          <label for="celsius">Celsius</label>
+        </fieldset>
+        <button type="submit">Check the weather</button>
+      </form>
+      <section id="weather-card" class="weather-card container">
+        <ul id="weather-info" class="weather-info">
+          <li id="country" class="italic"></li>
+          <li id="city-name" class="bold emphasis"></li>
+          <li id="temperature" class="emphasis"></li>
+          <li id="humidity"></li>
+          <li id="weather-desc" class="capitalize"></li>
+        </ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

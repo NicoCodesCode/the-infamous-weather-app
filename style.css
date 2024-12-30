@@ -1,0 +1,160 @@
+:root {
+  --color1: #acbdba;
+  --color2: #a599b5;
+  --color3: #2e2f2f;
+  --color4: #051014;
+  --color5: #afc2d5;
+  --color6: #ccddd3;
+  --color7: #dfefca;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color7);
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+  height: 12vh;
+  margin-bottom: 4rem;
+  background-color: var(--color3);
+  color: var(--color6);
+  padding: 0 30px;
+  line-height: 12vh;
+  box-shadow: 0 5px 10px var(--color2);
+}
+
+main {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.container {
+  width: clamp(400px, 35vw, 500px);
+  height: clamp(450px, 65vh, 600px);
+  padding: 3rem 2rem;
+  background: linear-gradient(var(--color5), var(--color6));
+  color: var(--color4);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--color2);
+}
+
+.weather-form fieldset {
+  border: none;
+}
+
+.weather-form legend {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.city-name-input {
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 7px 20px;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  color: var(--color4);
+}
+
+.temp-unit-input {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.temp-unit {
+  width: 20px;
+}
+
+.temp-unit-input label {
+  font-size: 1.2rem;
+}
+
+.weather-form button {
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.weather-form button:active {
+  background-color: #fff;
+}
+
+.weather-card {
+  display: none;
+  margin-bottom: 3rem;
+}
+
+.weather-info {
+  list-style: none;
+}
+
+.weather-info li {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.emphasis {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.error {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: crimson;
+}
+
+@media only screen and (max-width: 355px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
