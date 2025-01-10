@@ -65,7 +65,7 @@ async function getCityLocation() {
   const cityName = document.getElementById("city-name").value.toLowerCase();
 
   const response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${apiKey}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${apiKey}`
   );
   const data = await response.json();
 
